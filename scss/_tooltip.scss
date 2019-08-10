@@ -1,0 +1,19 @@
+.tooltip {
+    text-decoration: underline;
+    color: $tooltip-word-color;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltipText {
+    position: absolute;
+    top: 100%;
+    display: block;
+    background-color: $tooltip-bgc;
+    color: $tooltip-color;
+    border: solid 1px $tooltip-color;
+    border-radius: 2rem;
+    z-index: 1;
+    padding: 1rem;
+}
