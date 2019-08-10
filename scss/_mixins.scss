@@ -1,0 +1,11 @@
+@mixin submenuAnimation ($itemsNumber) {
+    $delay: 0;
+
+    @for $i from 1 through $itemsNumber {
+        .sub-menu__item--#{$i} {
+            animation: show .2s #{$delay}s forwards;
+        }
+
+        $delay: $delay+0.1;
+    }
+}
